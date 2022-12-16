@@ -1,0 +1,12 @@
+# # possible to define higher-lvl defaults that this will override
+defaults:
+  - settings
+
+output-file: 'proposal.pdf'
+input-files:
+  - proposal.md
+
+
+to: pdf
+
+pdf-engine: 'pdflatex' #TODO tectonic?
