@@ -1,6 +1,3 @@
-output-file: 'proposal-draft.pdf'
-input-files:
-  - main.md
 
 metadata-file: ${.}/info.yaml
 
@@ -10,7 +7,6 @@ metadata-file: ${.}/info.yaml
 #   - defsB
 
 from: markdown
-to: beamer
 standalone: true
 
 data-dir:
@@ -18,57 +14,11 @@ data-dir:
 
 # shift-heading-level-by: -1
 
-pdf-engine: 'xelatex' #TODO tectonic?
-slide-level: 2
 citeproc: true
 cite-method: citeproc
 bibliography: ${.}/resources/biblio.bib
 
 
-filters:
-  - pandoc-beamer-block
-
 #csl: resources/asme.csl  # <-- uncomment and add .csl for citation style
 
 # for the logo, etc.
-variables:
-  # slide-level: 2
-  # for beamer
-  theme: 'metropolis'
-  themeoptions:
-    - block=fill
-    - progressbar=frametitle
-  section-titles: true
-  aspectratio: 43
-  pandoc-beamer-block:
-    - classes: [info]
-    - classes: [example]
-      type: example
-    - classes: [alert]
-      type: alert
-
-  # for latex
-  urlcolor: orange
-  header-includes:
-    - |
-      \usepackage[most]{tcolorbox}
-      \usepackage{booktabs}
-      \titlegraphic{
-      \tikz[overlay,remember picture]
-      \node[yshift=.9cm,xshift=.9cm,
-        at=(current page.south west),
-        anchor=south west] {
-        \includegraphics[height=1.5cm]{resources/nistident_fleft_vec.eps}
-        };
-      }
-
-      \providecommand{\subtitle}[1]{%
-        \usepackage{titling}
-        \posttitle{%
-          \par\large#1\end{center}}
-      }
-
-      \definecolor{block-gray}{gray}{0.95}
-      \usepackage{dot2texi}
-      \usepackage{amsmath}
-      \usepackage{centernot}
