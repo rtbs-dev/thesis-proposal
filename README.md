@@ -1,33 +1,20 @@
-# MD Presentation Template
+# Thesis Proposal 
+White paper and presentation. 
 
-Nice-looking, NIST-compliant separation of form and content. 
+## Directory 
 
-> work smarter, not harder. 
-
-
-## Notes
-
-- Requires: 
-    - matze/mtheme to be installed (`make sty`) (may come with TexLive already) 
-    - and the Fira fonts (also in TexLive, but make sure system can access)
-    - `pandoc-beamer-block` python package for beamer-style callouts in pandoc.
-- Optional:
-    - edit `settings.yaml` to include a `csl:` citation style file e.g. `asme.csl`. 
-
-## Output Options: 
+- Proposal White-paper [md](proposal.md)/[pdf](proposal.pdf)/[settings-yaml](proposal-settings.yaml)
+- presentation (still placeholder!)
+- bibliography (still just .bib, but _SORTED BY PRIORITY_ :smile:) [.bib](resources/biblio.bib)
 
 
-### Reveal.js 
+## Contributing? 
+If you're assisting/co-authoring anything, this is how: 
 
-`pandoc -t revealjs -s -o example.html example.md -V theme=serif`
+### edits
+make the changes in a branch, and submit a PR for discussion purposes. 
 
-If you don't have a local reveal installed/accessible: 
-
-`-V revealjs-url=https://revealjs.com`
-
-### LaTeX/Beamer
-see `settings.yaml`
-
-
-## TODO
-settings config hierarchy for different outputs. 
+### comments
+- If they are simultaneous with edits, use the PR page and in-code commenting. 
+- Otherwise, open an issue with high-level notes, and reference files/etc. from there. 
+  _THEN_ the changes will get done using the #[edits] process above, so that low-level comments get addressed in-context via PR. 
