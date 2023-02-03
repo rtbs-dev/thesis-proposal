@@ -2,9 +2,9 @@
 defaults:
   - settings
 
-output-file: 'proposal-pres.pdf'
+output-file: 'presentation.pdf'
 input-files:
-  - main.md
+  - presentation.md
 
 
 to: beamer

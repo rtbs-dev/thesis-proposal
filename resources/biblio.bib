@@ -1,9 +1,933 @@
-@article{ebeling2009evolution,
-  title={Evolution of a Box},
-  author={Ebeling, CE},
-  journal={Invention and Technology},
-  volume={23},
-  number={4},
-  pages={8--9},
-  year={2009}
+@Report{Sonthalia2020,
+  abstract    = {Given data, finding a faithful low-dimensional hyperbolic embedding of the data is a key method by which we can extract hierarchical information or learn representative geometric features of the data. In this paper, we explore a new method for learning hyperbolic representations by taking a metric-first approach. Rather than determining the low-dimensional hyperbolic embedding directly, we learn a tree structure on the data. This tree structure can then be used directly to extract hierarchical information, embedded into a hyperbolic manifold using Sarkar's construction {\textbackslash}cite\{sarkar\}, or used as a tree approximation of the original metric. To this end, we present a novel fast algorithm {\textbackslash}textsc\{{TreeRep}\} such that, given a \${\textbackslash}delta\$-hyperbolic metric (for any \${\textbackslash}delta {\textbackslash}geq 0\$), the algorithm learns a tree structure that approximates the original metric. In the case when \${\textbackslash}delta = 0\$, we show analytically that {\textbackslash}textsc\{{TreeRep}\} exactly recovers the original tree structure. We show empirically that {\textbackslash}textsc\{{TreeRep}\} is not only many orders of magnitude faster than previously known algorithms, but also produces metrics with lower average distortion and higher mean average precision than most previous algorithms for learning hyperbolic embeddings, extracting hierarchical information, and approximating metrics via tree metrics.},
+  author      = {Sonthalia, Rishi and Gilbert, Anna C.},
+  comment     = {https://github.com/rsonthal/TreeRep},
+  copyright   = {arXiv.org perpetual, non-exclusive license},
+  date        = {2020-10-22},
+  doi         = {10.48550/arXiv.2005.03847},
+  eprint      = {2005.03847},
+  eprinttype  = {arxiv},
+  file        = {:pdfs/Sonthalia2020 - Tree! I Am No Tree! I Am a Low Dimensional Hyperbolic Embedding.pdf:PDF},
+  groups      = {Research Topics, Tree Editing Interface, hyperbolic trees},
+  institution = {{arXiv}},
+  keywords    = {Computer Science - Machine Learning, Mathematics - Metric Geometry, Statistics - Machine Learning},
+  note        = {type: article},
+  number      = {{arXiv}:2005.03847},
+  priority    = {prio1},
+  publisher   = {arXiv},
+  ranking     = {rank5},
+  title       = {Tree! I am no Tree! I am a Low Dimensional Hyperbolic Embedding},
+}
+
+@InProceedings{Loh2012,
+  author     = {Loh, Po-ling and Wainwright, Martin J},
+  booktitle  = {Advances in Neural Information Processing Systems},
+  title      = {Structure estimation for discrete graphical models: Generalized covariance matrices and their inverses},
+  publisher  = {Curran Associates, Inc.},
+  volume     = {25},
+  abstract   = {We investigate a curious relationship between the structure of a discrete graphical model and the support of the inverse of a generalized covariance matrix. We show that for certain graph structures, the support of the inverse covariance matrix of indicator variables on the vertices of a graph reflects the conditional independence structure of the graph. Our work extends results that have previously been es- tablished only in the context of multivariate Gaussian graphical models, thereby addressing an open question about the significance of the inverse covariance ma- trix of a non-Gaussian distribution. Based on our population-level results, we show how the graphical Lasso may be used to recover the edge structure of cer- tain classes of discrete graphical models, and present simulations to verify our theoretical results.},
+  date       = {2012},
+  file       = {:pdfs/Loh2012 - Structure Estimation for Discrete Graphical Models_ Generalized Covariance Matrices and Their Inverses.pdf:PDF},
+  groups     = {kernels-graphs},
+  priority   = {prio1},
+  shorttitle = {Structure estimation for discrete graphical models},
+  url        = {https://proceedings.neurips.cc/paper/2012/hash/6ba1085b788407963fe0e89c699a7396-Abstract.html},
+  urldate    = {2023-02-01},
+}
+
+@TechReport{Heymann2006,
+  author      = {Paul Heymann and Hector Garcia-Molina},
+  institution = {Stanford InfoLab},
+  title       = {Collaborative Creation of Communal Hierarchical Taxonomies in Social Tagging Systems},
+  number      = {2006-10},
+  type        = {Technical Report},
+  abstract    = {Collaborative tagging systems---systems where many casual users annotate objects with free-form strings (tags) of their choosing---have recently emerged as a powerful way to label and organize large collections of data.  During our recent investigation into these types of systems, we discovered a simple but remarkably effective algorithm for converting a large corpus of tags annotating objects in a tagging system into a navigable hierarchical taxonomy of tags.  We first discuss the algorithm and then present a preliminary model to explain why it is so effective in these types of systems.},
+  date        = {2006-04},
+  file        = {:pdfs/Heymann2006 - Collaborative Creation of Communal Hierarchical Taxonomies in Social Tagging Systems.pdf:PDF},
+  groups      = {hyperbolic trees},
+  keywords    = {Tagging, taxonomy, hierarchy, annotation, metadata management, CSCW.},
+  priority    = {prio1},
+  publisher   = {Stanford},
+  url         = {http://ilpubs.stanford.edu:8090/775/},
+}
+
+@InProceedings{Kepner2016,
+  author     = {Kepner, Jeremy and Aaltonen, Peter and Bader, David and Buluç, Aydin and Franchetti, Franz and Gilbert, John and Hutchison, Dylan and Kumar, Manoj and Lumsdaine, Andrew and Meyerhenke, Henning and {McMillan}, Scott and Yang, Carl and Owens, John D. and Zalewski, Marcin and Mattson, Timothy and Moreira, Jose},
+  booktitle  = {2016 {IEEE} High Performance Extreme Computing Conference ({HPEC})},
+  title      = {Mathematical foundations of the {GraphBLAS}},
+  pages      = {1--9},
+  abstract   = {The {GraphBLAS} standard ({GraphBlas}.org) is being developed to bring the potential of matrix-based graph algorithms to the broadest possible audience. Mathematically, the {GraphBLAS} defines a core set of matrix-based graph operations that can be used to implement a wide class of graph algorithms in a wide range of programming environments. This paper provides an introduction to the mathematics of the {GraphBLAS}. Graphs represent connections between vertices with edges. Matrices can represent a wide range of graphs using adjacency matrices or incidence matrices. Adjacency matrices are often easier to analyze while incidence matrices are often better for representing data. Fortunately, the two are easily connected by matrix multiplication. A key feature of matrix mathematics is that a very small number of matrix operations can be used to manipulate a very wide range of graphs. This composability of a small number of operations is the foundation of the {GraphBLAS}. A standard such as the {GraphBLAS} can only be effective if it has low performance overhead. Performance measurements of prototype {GraphBLAS} implementations indicate that the overhead is low.},
+  date       = {2016-09},
+  doi        = {10.1109/HPEC.2016.7761646},
+  eventtitle = {2016 {IEEE} High Performance Extreme Computing Conference ({HPEC})},
+  file       = {:pdfs/Kepner2016 - Mathematical Foundations of the GraphBLAS.pdf:PDF},
+  groups     = {incidence structures},
+  keywords   = {Matrices, Sparse matrices, Finite element analysis, Standards, Additives},
+  priority   = {prio1},
+}
+
+@Article{Chodrow2020,
+  author       = {Chodrow, Philip and Mellor, Andrew},
+  title        = {Annotated hypergraphs: models and applications},
+  issn         = {2364-8228},
+  number       = {1},
+  pages        = {9},
+  volume       = {5},
+  abstract     = {Hypergraphs offer a natural modeling language for studying polyadic interactions between sets of entities. Many polyadic interactions are asymmetric, with nodes playing distinctive roles. In an academic collaboration network, for example, the order of authors on a paper often reflects the nature of their contributions to the completed work. To model these networks, we introduce annotated hypergraphs as natural polyadic generalizations of directed graphs. Annotated hypergraphs form a highly general framework for incorporating metadata into polyadic graph models. To facilitate data analysis with annotated hypergraphs, we construct a role-aware configuration null model for these structures and prove an efficient Markov Chain Monte Carlo scheme for sampling from it. We proceed to formulate several metrics and algorithms for the analysis of annotated hypergraphs. Several of these, such as assortativity and modularity, naturally generalize dyadic counterparts. Other metrics, such as local role densities, are unique to the setting of annotated hypergraphs. We illustrate our techniques on six digital social networks, and present a detailed case-study of the Enron email data set.},
+  date         = {2020-01-30},
+  doi          = {10.1007/s41109-020-0252-y},
+  file         = {:pdfs/Chodrow2020 - Annotated Hypergraphs_ Models and Applications.pdf:PDF},
+  groups       = {incidence structures},
+  journaltitle = {Applied Network Science},
+  keywords     = {Hypergraphs, Null models, Network science, Statistical inference, Community detection},
+  langid       = {english},
+  priority     = {prio1},
+  shortjournal = {Appl Netw Sci},
+  shorttitle   = {Annotated hypergraphs},
+  urldate      = {2023-02-01},
+}
+
+@Article{Torres2021,
+  author       = {Torres, Leo and Blevins, Ann S. and Bassett, Danielle and Eliassi-Rad, Tina},
+  title        = {The Why, How, and When of Representations for Complex Systems},
+  issn         = {0036-1445},
+  number       = {3},
+  pages        = {435--485},
+  volume       = {63},
+  abstract     = {Complex systems, composed at the most basic level of units and their interactions, describe phenomena in a wide variety of domains, from neuroscience to computer science and economics. The wide variety of applications has resulted in two key challenges: the generation of many domain-specific strategies for complex systems analyses that are seldom revisited, and the compartmentalization of representation and analysis ideas within a domain due to inconsistency in complex systems language. In this work we propose basic, domain-agnostic language in order to advance toward a more cohesive vocabulary. We use this language to evaluate each step of the complex systems analysis pipeline, beginning with the system under study and data collected, then moving through different mathematical frameworks for encoding the observed data (i.e., graphs, simplicial complexes, and hypergraphs), and relevant computational methods for each framework. At each step we consider different types of dependencies; these are properties of the system that describe how the existence of an interaction among a set of units in a system may affect the possibility of the existence of another relation. We discuss how dependencies may arise and how they may alter the interpretation of results or the entirety of the analysis pipeline. We close with two real-world examples using coauthorship data and email communications data that illustrate how the system under study, the dependencies therein, the research question, and the choice of mathematical representation influence the results. We hope this work can serve as an opportunity for reflection for experienced complex systems scientists, as well as an introductory resource for new researchers.},
+  date         = {2021-01},
+  doi          = {10.1137/20M1355896},
+  file         = {:pdfs/Torres2021 - The Why, How, and When of Representations for Complex Systems.pdf:PDF},
+  groups       = {incidence structures},
+  journaltitle = {{SIAM} Review},
+  keywords     = {complex systems, dependencies, graph theory, simplicial complexes, hypergraphs, 00-02, 00A69, 00A71},
+  priority     = {prio1},
+  publisher    = {Society for Industrial and Applied Mathematics},
+  ranking      = {rank5},
+  shortjournal = {{SIAM} Rev.},
+  urldate      = {2023-02-01},
+}
+
+@InProceedings{Nielsen2016,
+  author     = {Nielsen, Frank and Muzellec, Boris and Nock, Richard},
+  booktitle  = {2016 {IEEE} International Conference on Image Processing ({ICIP})},
+  title      = {Classification with mixtures of curved mahalanobis metrics},
+  note       = {{ISSN}: 2381-8549},
+  pages      = {241--245},
+  abstract   = {We study the classification with respect to the class of curved Mahalanobis metrics that extend the celebrated flat Mahalanobis distances to constant curvature spaces. We prove that these curved Mahalanobis k-{NN} classifiers define piecewise linear decision boundaries, and report the performance of learning those metrics within the framework of the Large Margin Nearest Neighbor ({LMNN}). Finally, we show experimentally that a mixture of curved Mahalanobis metrics define a composite metric distance that improves the classification performance.},
+  date       = {2016-09},
+  doi        = {10.1109/ICIP.2016.7532355},
+  eventtitle = {2016 {IEEE} International Conference on Image Processing ({ICIP})},
+  file       = {:pdfs/Nielsen2016 - Classification with Mixtures of Curved Mahalanobis Metrics.pdf:PDF},
+  groups     = {kernels-graphs},
+  issn       = {2381-8549},
+  keywords   = {Geometry, Matrix decomposition, Euclidean distance, Symmetric matrices, Shape, Covariance matrices, Classification, Mahalanobis distance, metric learning, Large Margin Nearest Neighbor ({LMNN}), Cayley-Klein geometry},
+  priority   = {prio1},
+}
+
+@InProceedings{Chami2020,
+  author     = {Chami, Ines and Gu, Albert and Chatziafratis, Vaggos and Ré, Christopher},
+  booktitle  = {Advances in Neural Information Processing Systems},
+  title      = {From Trees to Continuous Embeddings and Back: Hyperbolic Hierarchical Clustering},
+  pages      = {15065--15076},
+  publisher  = {Curran Associates, Inc.},
+  volume     = {33},
+  abstract   = {Similarity-based Hierarchical Clustering ({HC}) is a classical unsupervised machine learning algorithm that has traditionally been solved with heuristic algorithms like Average-Linkage. Recently, Dasgupta reframed {HC} as a discrete optimization problem by introducing a global cost function measuring the quality of a given tree. In this work, we provide the first continuous relaxation of Dasgupta's discrete optimization problem with provable quality guarantees. The key idea of our method, {HypHC}, is showing a direct correspondence from discrete trees to continuous representations (via the hyperbolic embeddings of their leaf nodes) and back (via a decoding algorithm that maps leaf embeddings to a dendrogram), allowing us to search the space of discrete binary trees with continuous optimization. Building on analogies between trees and hyperbolic space, we derive a continuous analogue for the notion of lowest common ancestor, which leads to a continuous relaxation of Dasgupta's discrete objective. We can show that after decoding, the global minimizer of our continuous relaxation yields a discrete tree with a (1+eps)-factor approximation for Dasgupta's optimal tree, where eps can be made arbitrarily small and controls optimization challenges. We experimentally evaluate {HypHC} on a variety of {HC} benchmarks and find that even approximate solutions found with gradient descent have superior clustering quality than agglomerative heuristics or other gradient based algorithms. Finally, we highlight the flexibility of {HypHC} using end-to-end training in a downstream classification task.},
+  date       = {2020},
+  file       = {:pdfs/Chami2020 - From Trees to Continuous Embeddings and Back_ Hyperbolic Hierarchical Clustering.pdf:PDF},
+  groups     = {Research Topics, Tree Editing Interface, hyperbolic trees},
+  priority   = {prio2},
+  shorttitle = {From Trees to Continuous Embeddings and Back},
+  url        = {https://proceedings.neurips.cc/paper/2020/hash/ac10ec1ace51b2d973cd87973a98d3ab-Abstract.html},
+  urldate    = {2022-07-19},
+}
+
+@InProceedings{Tabaghi2020,
+  author    = {Tabaghi, Puoya and Dokmanić, Ivan},
+  booktitle = {Proceedings of the 26th {ACM} {SIGKDD} International Conference on Knowledge Discovery \& Data Mining},
+  title     = {Hyperbolic Distance Matrices},
+  pages     = {1728--1738},
+  publisher = {Association for Computing Machinery},
+  series    = {{KDD} '20},
+  abstract  = {Hyperbolic space is a natural setting for mining and visualizing data with hierarchical structure. In order to compute a hyperbolic embedding from comparison or similarity information, one has to solve a hyperbolic distance geometry problem. In this paper, we propose a unified framework to compute hyperbolic embeddings from an arbitrary mix of noisy metric and non-metric data. Our algorithms are based on semidefinite programming and the notion of a hyperbolic distance matrix, in many ways parallel to its famous Euclidean counterpart. A central ingredient we put forward is a semidefinite characterization of the hyperbolic Gramian---a matrix of Lorentzian inner products. This characterization allows us to formulate a semidefinite relaxation to efficiently compute hyperbolic embeddings in two stages: first, we complete and denoise the observed hyperbolic distance matrix; second, we propose a spectral factorization method to estimate the embedded points from the hyperbolic distance matrix. We show through numerical experiments how the flexibility to mix metric and non-metric constraints allows us to efficiently compute embeddings from arbitrary data.},
+  date      = {2020-08-20},
+  doi       = {10.1145/3394486.3403224},
+  file      = {:pdfs/Tabaghi2020 - Hyperbolic Distance Matrices.pdf:PDF},
+  groups    = {Research Topics, Tree Editing Interface, hyperbolic trees},
+  isbn      = {9781450379984},
+  keywords  = {spectral factorization, distance geometry, hyperbolic space, semidefinite program},
+  location  = {New York, {NY}, {USA}},
+  priority  = {prio2},
+  urldate   = {2023-01-03},
+}
+
+@Article{Batson2013,
+  author       = {Batson, Joshua and Spielman, Daniel A. and Srivastava, Nikhil and Teng, Shang-Hua},
+  title        = {Spectral sparsification of graphs: theory and algorithms},
+  issn         = {0001-0782},
+  number       = {8},
+  pages        = {87--94},
+  volume       = {56},
+  abstract     = {Graph sparsification is the approximation of an arbitrary graph by a sparse graph. We explain what it means for one graph to be a spectral approximation of another and review the development of algorithms for spectral sparsification. In addition to being an interesting concept, spectral sparsification has been an important tool in the design of nearly linear-time algorithms for solving systems of linear equations in symmetric, diagonally dominant matrices. The fast solution of these linear systems has already led to breakthrough results in combinatorial optimization, including a faster algorithm for finding approximate maximum flows and minimum cuts in an undirected network.},
+  date         = {2013-08-01},
+  doi          = {10.1145/2492007.2492029},
+  file         = {:pdfs/Batson2013 - Spectral Sparsification of Graphs_ Theory and Algorithms.pdf:PDF},
+  groups       = {kernels-graphs},
+  journaltitle = {Communications of the {ACM}},
+  priority     = {prio2},
+  shortjournal = {Commun. {ACM}},
+  shorttitle   = {Spectral sparsification of graphs},
+  urldate      = {2023-02-01},
+}
+
+@InProceedings{Spielman2008,
+  author    = {Spielman, Daniel A. and Srivastava, Nikhil},
+  booktitle = {Proceedings of the fortieth annual {ACM} symposium on Theory of computing},
+  title     = {Graph sparsification by effective resistances},
+  pages     = {563--568},
+  publisher = {Association for Computing Machinery},
+  series    = {{STOC} '08},
+  abstract  = {We present a nearly-linear time algorithm that produces high-quality sparsifiers of weighted graphs. Given as input a weighted graph G=(V,E,w) and a parameter ε{\textgreater}0, we produce a weighted subgraph H=(V,{\textasciitilde}E,{\textasciitilde}w) of G such that {\textbar}{\textasciitilde}E{\textbar}=O(n log n/ε2) and for all vectors x in {RV}. (1-ε) ∑uv ∈ E (x(u)-x(v))2wuv≤ ∑uv in {\textasciitilde}E(x(u)-x(v))2{\textasciitilde}wuv ≤ (1+ε)∑uv ∈ E(x(u)-x(v))2wuv. This improves upon the sparsifiers constructed by Spielman and Teng, which had O(n logc n) edges for some large constant c, and upon those of Benczur and Karger, which only satisfied (1) for x in \{0,1\}V. We conjecture the existence of sparsifiers with O(n) edges, noting that these would generalize the notion of expander graphs, which are constant-degree sparsifiers for the complete graph. A key ingredient in our algorithm is a subroutine of independent interest: a nearly-linear time algorithm that builds a data structure from which we can query the approximate effective resistance between any two vertices in a graph in O(log n) time.},
+  date      = {2008-05-17},
+  doi       = {10.1145/1374376.1374456},
+  file      = {:Spielman2008 - Graph Sparsification by Effective Resistances.pdf:PDF},
+  groups    = {kernels-graphs},
+  isbn      = {9781605580470},
+  keywords  = {random sampling, spectral graph theory, electrical flows},
+  location  = {New York, {NY}, {USA}},
+  priority  = {prio2},
+  urldate   = {2023-02-01},
+}
+
+@Book{Kepner2011,
+  author    = {Kepner, Jeremy and Gilbert, John},
+  publisher = {Society for Industrial and Applied Mathematics},
+  title     = {Graph Algorithms in the Language of Linear Algebra},
+  isbn      = {9780898719901},
+  abstract  = {The field of graph algorithms has become one of the pillars of theoretical computer science, informing research in such diverse areas as combinatorial optimization, complexity theory and topology. To improve the computational performance of graph algorithms, researchers have proposed a shift to a parallel computing paradigm. This book addresses the challenges of implementing parallel graph algorithms by exploiting the well-known duality between a canonical representation of graphs as abstract collections of vertices and edges and a sparse adjacency matrix representation. This linear algebraic approach is widely accessible to scientists and engineers who may not be formally trained in computer science. The authors show how to leverage existing parallel matrix computation techniques and the large amount of software infrastructure that exists for these computations to implement efficient and scalable parallel graph algorithms. The benefits of this approach are reduced algorithmic complexity, ease of implementation and improved performance.},
+  date      = {2011-08-04},
+  file      = {:pdfs/Kepner2011 - Graph Algorithms in the Language of Linear Algebra.html:URL},
+  groups    = {incidence structures},
+  location  = {Philadelphia},
+  pagetotal = {375},
+  priority  = {prio2},
+}
+
+@InProceedings{Ganea2018,
+  author     = {Ganea, Octavian and Becigneul, Gary and Hofmann, Thomas},
+  title      = {Hyperbolic Entailment Cones for Learning Hierarchical Embeddings},
+  pages      = {1646--1655},
+  publisher  = {{PMLR}},
+  abstract   = {Learning graph representations via low-dimensional embeddings that preserve relevant network properties is an important class of problems in machine learning. We here present a novel method to embed directed acyclic graphs. Following prior work, we first advocate for using hyperbolic spaces which provably model tree-like structures better than Euclidean geometry. Second, we view hierarchical relations as partial orders defined using a family of nested geodesically convex cones. We prove that these entailment cones admit an optimal shape with a closed form expression both in the Euclidean and hyperbolic spaces, and they canonically define the embedding learning process. Experiments show significant improvements of our method over strong recent baselines both in terms of representational capacity and generalization.},
+  date       = {2018-07-03},
+  eventtitle = {International Conference on Machine Learning},
+  file       = {:pdfs/Ganea2018 - Hyperbolic Entailment Cones for Learning Hierarchical Embeddings.pdf:PDF;:ganea_hyperbolic_2018 - Hyperbolic Entailment Cones for Learning Hierarchical Embeddings.pdf:PDF},
+  groups     = {hyperbolic trees},
+  issn       = {2640-3498},
+  langid     = {english},
+  priority   = {prio2},
+  url        = {https://proceedings.mlr.press/v80/ganea18a.html},
+  urldate    = {2023-02-01},
+}
+
+@InProceedings{Nickel2018,
+  author     = {Nickel, Maximillian and Kiela, Douwe},
+  title      = {Learning Continuous Hierarchies in the Lorentz Model of Hyperbolic Geometry},
+  pages      = {3779--3788},
+  publisher  = {{PMLR}},
+  abstract   = {We are concerned with the discovery of hierarchical relationships from large-scale unstructured similarity scores. For this purpose, we study different models of hyperbolic space and find that learning embeddings in the Lorentz model is substantially more efficient than in the Poincar\{é\}-ball model. We show that the proposed approach allows us to learn high-quality embeddings of large taxonomies which yield improvements over Poincar\{é\} embeddings, especially in low dimensions. Lastly, we apply our model to discover hierarchies in two real-world datasets: we show that an embedding in hyperbolic space can reveal important aspects of a company’s organizational structure as well as reveal historical relationships between language families.},
+  date       = {2018-07-03},
+  eventtitle = {International Conference on Machine Learning},
+  file       = {:pdfs/Nickel2018 - Learning Continuous Hierarchies in the Lorentz Model of Hyperbolic Geometry.pdf:PDF},
+  groups     = {hyperbolic trees},
+  issn       = {2640-3498},
+  langid     = {english},
+  priority   = {prio2},
+  url        = {https://proceedings.mlr.press/v80/nickel18a.html},
+  urldate    = {2023-02-01},
+}
+
+@Article{Kriege2020,
+  author       = {Kriege, Nils M. and Johansson, Fredrik D. and Morris, Christopher},
+  title        = {A survey on graph kernels},
+  issn         = {2364-8228},
+  number       = {1},
+  pages        = {1--42},
+  volume       = {5},
+  abstract     = {Graph kernels have become an established and widely-used technique for solving classification tasks on graphs. This survey gives a comprehensive overview of techniques for kernel-based graph classification developed in the past 15 years. We describe and categorize graph kernels based on properties inherent to their design, such as the nature of their extracted graph features, their method of computation and their applicability to problems in practice. In an extensive experimental evaluation, we study the classification accuracy of a large suite of graph kernels on established benchmarks as well as new datasets. We compare the performance of popular kernels with several baseline methods and study the effect of applying a Gaussian {RBF} kernel to the metric induced by a graph kernel. In doing so, we find that simple baselines become competitive after this transformation on some datasets. Moreover, we study the extent to which existing graph kernels agree in their predictions (and prediction errors) and obtain a data-driven categorization of kernels as result. Finally, based on our experimental results, we derive a practitioner’s guide to kernel-based graph classification.},
+  date         = {2020-12},
+  doi          = {10.1007/s41109-019-0195-3},
+  file         = {:pdfs/Kriege2020 - A Survey on Graph Kernels.pdf:PDF},
+  groups       = {kernels-graphs},
+  howpublished = {{ReviewPaper}},
+  journaltitle = {Applied Network Science},
+  langid       = {english},
+  priority     = {prio2},
+  publisher    = {{SpringerOpen}},
+  rights       = {2019 The Author(s)},
+  shortjournal = {Appl Netw Sci},
+  type         = {{ReviewPaper}},
+  urldate      = {2023-02-01},
+}
+
+@InProceedings{Bao2017,
+  author     = {Bao, Wen-xia and Yu, Guo-fen and Hu, Gen-sheng and Liang, Dong and Yan, Shao-mei},
+  booktitle  = {2017 10th International Congress on Image and Signal Processing, {BioMedical} Engineering and Informatics ({CISP}-{BMEI})},
+  title      = {The spectral matching algorithm based on hyperbolic mahalanobis metric},
+  pages      = {1--6},
+  abstract   = {In order to solve the problem of the traditional image matching algorithm based on the spectral feature, the spectral matching algorithm based on hyperbolic mahalanobis metric is proposed in this paper. The algorithm first introduces a hyperbolic metric that has better adaptability to the sample data. And the hyperbolic mahalanobis metric is defined according to the statistical properties of the data. For a point in a given pointset, the sub point-set is selected according to the hyperbolic mahalanobis metric and the weighted graph of the sub point-set is constructed. The eigenvalue vector and the spectral gap vector are obtained by the singular value decomposition ({SVD}) of the adjacency matrix of the weighted graph, which construct the hyperbolic mahalanobis metric spectral feature. Finally, the matching matrix is constructed based on the similarity between the hyperbolic mahalanobis metric spectral feature and geometric relations between feature points. Thereby establish the matching mathematical model and introduce the greedy algorithm to obtain the matching results. A large number of experimental results show that the proposed algorithm improves the matching accuracy and the robustness. And the algorithm extends the application range of the spectral matching algorithm.},
+  date       = {2017-10},
+  doi        = {10.1109/CISP-BMEI.2017.8302019},
+  eventtitle = {2017 10th International Congress on Image and Signal Processing, {BioMedical} Engineering and Informatics ({CISP}-{BMEI})},
+  file       = {:pdfs/Bao2017 - The Spectral Matching Algorithm Based on Hyperbolic Mahalanobis Metric.pdf:PDF},
+  groups     = {kernels-graphs},
+  keywords   = {Measurement, Signal processing algorithms, Matrix decomposition, Feature extraction, Eigenvalues and eigenfunctions, Geometry, Manganese, image matching, hyperbolic mahalanobis metric, spectral feature},
+  priority   = {prio2},
+}
+
+@Thesis{Sonthalia2021,
+  abstract     = {All data has some inherent mathematical structure. I am interested in understanding the intrinsic geometric and probabilistic structure of data to design effective algorithms and tools that can be applied to machine learning and across all branches of science.
+
+The focus of this thesis is to increase the effectiveness of machine learning techniques by developing a mathematical and algorithmic framework using which, given any type of data, we can learn an optimal representation. Representation learning is done for many reasons. It could be done to fix the corruption given corrupted data or to learn a low dimensional or simpler representation, given high dimensional data or a very complex representation of the data. It could also be that the current representation of the data does not capture the important geometric features of the data.
+
+One of the many challenges in representation learning is determining ways to judge the quality of the representation learned. In many cases, the consensus is that if d is the natural metric on the representation, then this metric should provide meaningful information about the data. Many examples of this can be seen in areas such as metric learning, manifold learning, and graph embedding. However, most algorithms that solve these problems learn a representation in a metric space first and then extract a metric.
+
+A large part of my research is exploring what happens if the order is switched, that is, learn the appropriate metric first and the embedding later. The philosophy behind this approach is that understanding the inherent geometry of the data is the most crucial part of representation learning. Often, studying the properties of the appropriate metric on the input data sets indicates the type of space, we should be seeking for the representation. Hence giving us more robust representations. Optimizing for the appropriate metric can also help overcome issues such as missing and noisy data. My projects fall into three different areas of representation learning.
+
+1)  Geometric and probabilistic analysis of representation learning methods.
+2) Developing methods to learn optimal metrics on large datasets.
+3) Applications.
+
+For the category of geometric and probabilistic analysis of representation learning methods, we have three projects. First, designing optimal training data for denoising autoencoders. Second, formulating a new optimal transport problem and understanding the geometric structure. Third, analyzing the robustness to perturbations of the solutions obtained from the classical multidimensional scaling algorithm versus that of the true solutions to the multidimensional scaling problem.
+
+For learning optimal metric, we are given a dissimilarity matrix \$hat\{D\}\$, some function \$f\$ and some a subset \$S\$ of the space of all metrics and we want to find \$D in S\$ that minimizes \$f(D,hat\{D\})\$. In this thesis, we consider the version of the problem when \$S\$ is the space of metrics defined on a fixed graph. That is, given a graph \$G\$, we let \$S\$, be the space of all metrics defined via \$G\$. For this \$S\$, we consider the sparse objective function as well as convex objective functions. We also looked at the problem where we want to learn a tree. We also show how the ideas behind learning the optimal metric can be applied to dimensionality reduction in the presence of missing data.
+
+Finally, we look at an application to real world data. Specifically trying to reconstruct ancient Greek text.},
+  author       = {Sonthalia, Rishi Saurabh},
+  date         = {2021},
+  doi          = {10.7302/2783},
+  file         = {:pdfs/Sonthalia2021 - Metric and Representation Learning.pdf:PDF},
+  groups       = {Research Topics, hyperbolic trees},
+  howpublished = {Thesis},
+  langid       = {american},
+  priority     = {prio3},
+  title        = {Metric and Representation Learning},
+  type         = {Thesis},
+  url          = {http://deepblue.lib.umich.edu/handle/2027.42/169738},
+  urldate      = {2022-07-19},
+}
+
+@Online{meiji1632021,
+  abstract = {Introduction The manifold hypothesis says that most real-world datasets lie approximately on a low-dimensional manifold, but by some Kantian twist of fate we rarely have direct access to this manifold1. As a result, most machine learning techniques utilize only local structure (e.g. the “loss + {SGD}” machine).
+In contrast, Topological and Geometric Data Analysis ({TGDA}) is a burgeoning field that studies the global structure of data. This is exciting not only because of potential domain applications – it also opens possibilities for porting a lot of powerful and beautiful math to the {ML} realm.},
+  author   = {meiji163},
+  date     = {2021-08-24},
+  groups   = {Tree Editing Interface, hyperbolic trees},
+  langid   = {english},
+  priority = {prio3},
+  title    = {Combinatorial Hyperbolic Embeddings},
+  url      = {https://meiji163.github.io/post/combo-hyperbolic-embedding/},
+  urldate  = {2022-07-19},
+}
+
+@InProceedings{Sarkar2012,
+  author    = {Sarkar, Rik},
+  booktitle = {Graph Drawing},
+  title     = {Low Distortion Delaunay Embedding of Trees in Hyperbolic Plane},
+  editor    = {van Kreveld, Marc and Speckmann, Bettina},
+  pages     = {355--366},
+  publisher = {Springer},
+  series    = {Lecture Notes in Computer Science},
+  abstract  = {This paper considers the problem of embedding trees into the hyperbolic plane. We show that any tree can be realized as the Delaunay graph of its embedded vertices. Particularly, a weighted tree can be embedded such that the weight on each edge is realized as the hyperbolic distance between its embedded vertices. Thus the embedding preserves the metric information of the tree along with its topology. The distance distortion between non adjacent vertices can be made arbitrarily small – less than a (1 + ε) factor for any given ε. Existing results on low distortion of embedding discrete metrics into trees carry over to hyperbolic metric through this result. The Delaunay character implies useful properties such as guaranteed greedy routing and realization as minimum spanning trees.},
+  date      = {2012},
+  doi       = {10.1007/978-3-642-25878-7_34},
+  file      = {:pdfs/Sarkar2012 - Low Distortion Delaunay Embedding of Trees in Hyperbolic Plane.pdf:PDF},
+  groups    = {hyperbolic trees},
+  isbn      = {9783642258787},
+  keywords  = {Minimum Span Tree, Voronoi Diagram, Voronoi Cell, Hyperbolic Plane, Weighted Tree},
+  langid    = {english},
+  location  = {Berlin, Heidelberg},
+  priority  = {prio3},
+}
+
+@Article{Du2012,
+  author     = {Juan Du and Nikolai Leonenko and Chunsheng Ma and Hong Shu},
+  title      = {Hyperbolic Vector Random Fields with Hyperbolic Direct and Cross Covariance Functions},
+  issn       = {0736-2994},
+  pages      = {662--674},
+  volume     = {30},
+  accessdate = {2023-02-01},
+  date       = {2012},
+  doi        = {10.1080/07362994.2012.684325},
+  file       = {:pdfs/- Hyperbolic Vector Random Fields with Hyperbolic Direct and Cross Covariance Functions.html:URL},
+  groups     = {hyperbolic trees},
+  priority   = {prio3},
+}
+
+@InProceedings{Sala2018,
+  author     = {Sala, Frederic and Sa, Chris De and Gu, Albert and Re, Christopher},
+  title      = {Representation Tradeoffs for Hyperbolic Embeddings},
+  pages      = {4460--4469},
+  publisher  = {{PMLR}},
+  abstract   = {Hyperbolic embeddings offer excellent quality with few dimensions when embedding hierarchical data structures. We give a combinatorial construction that embeds trees into hyperbolic space with arbitrarily low distortion without optimization. On {WordNet}, this algorithm obtains a mean-average-precision of 0.989 with only two dimensions, outperforming existing work by 0.11 points. We provide bounds characterizing the precision-dimensionality tradeoff inherent in any hyperbolic embedding. To embed general metric spaces, we propose a hyperbolic generalization of multidimensional scaling (h-{MDS}). We show how to perform exact recovery of hyperbolic points from distances, provide a perturbation analysis, and give a recovery result that enables us to reduce dimensionality. Finally, we extract lessons from the algorithms and theory above to design a scalable {PyTorch}-based implementation that can handle incomplete information.},
+  date       = {2018-07-03},
+  eventtitle = {International Conference on Machine Learning},
+  file       = {:pdfs/sala_representation_2018 - Representation Tradeoffs for Hyperbolic Embeddings.pdf:PDF;:pdfs/Sala2018 - Representation Tradeoffs for Hyperbolic Embeddings.pdf:PDF},
+  groups     = {hyperbolic trees},
+  issn       = {2640-3498},
+  langid     = {english},
+  priority   = {prio3},
+  url        = {https://proceedings.mlr.press/v80/sala18a.html},
+  urldate    = {2023-02-01},
+}
+
+@Article{Linzhuo2020,
+  author       = {Linzhuo, Li and Lingfei, Wu and James, Evans},
+  title        = {Social centralization and semantic collapse: Hyperbolic embeddings of networks and text},
+  issn         = {0304-422X},
+  pages        = {101428},
+  volume       = {78},
+  abstract     = {Modern advances in transportation and communication technology from airplanes to the internet alongside global expansions of media, migration, and trade have made the modern world more connected than ever before. But what does this bode for the convergence of global culture? Here we explore the relationship between centralization in social networks and contraction or collapse in the diversity of semantic expressions such as ideas, opinions and tastes. We advance formal examination of this relationship by introducing new methods of manifold learning that allow us to map social networks and semantic combinations into comparable hyperbolic spaces. Hyperbolic representations natively represent both hierarchy and diversity within a system. In a Poincaré disk—a two-dimensional hyperbolic embedding—radius from center traces the position of an actor in a social hierarchy or an idea in a semantic hierarchy. Angle of the disk required to inscribe connected actors or ideas captures their diversity. We illustrate this method by examining the relationship between social centralization and semantic diversity within 21st Century physics, empirically demonstrating how dense, centralized collaboration is associated with a reduction in the space of ideas and how these patterns generalize to all modern scholarship and science. We discuss the complex of causes underlying this association, and theorize the dynamic interplay between structural centralization and semantic contraction, arguing that it introduces an essential tension between the supply and demand of difference.},
+  date         = {2020-02-01},
+  doi          = {10.1016/j.poetic.2019.101428},
+  file         = {:pdfs/Linzhuo2020 - Social Centralization and Semantic Collapse_ Hyperbolic Embeddings of Networks and Text.html:URL},
+  groups       = {hyperbolic trees},
+  journaltitle = {Poetics},
+  keywords     = {Social networks, Semantic networks, Auto-encoders, Unsupervised learning, Hyperbolic embedding, Poincaré disk, Machine learning, Science of science},
+  langid       = {english},
+  priority     = {prio3},
+  series       = {Discourse, Meaning, and Networks: Advances in Socio-Semantic Analysis},
+  shortjournal = {Poetics},
+  shorttitle   = {Social centralization and semantic collapse},
+  url          = {https://www.sciencedirect.com/science/article/pii/S0304422X1830295X},
+  urldate      = {2023-02-01},
+}
+
+@InCollection{Boman2015,
+  author    = {Boman, Erik G. and Deweese, Kevin and Gilbert, John R.},
+  publisher = {Society for Industrial and Applied Mathematics},
+  title     = {An Empirical Comparison of Graph Laplacian Solvers},
+  isbn      = {9781611974317},
+  pages     = {174--188},
+  series    = {Proceedings},
+  abstract  = {Laplacian matrices of graphs arise in large-scale computational applications such as semisupervised machine learning; spectral clustering of images, genetic data, and web pages; transportation network flows; electrical resistor circuits; and elliptic partial differential equations discretized on unstructured grids with finite elements. A lean algebraic multigrid ({LAMG}) solver of the symmetric linear system \$Ax=b\$ is presented, where \$A\$ is a graph Laplacian. {LAMG}'s run time and storage are empirically demonstrated to scale linearly with the number of edges. {LAMG} consists of a setup phase, during which a sequence of increasingly coarser Laplacian systems is constructed, and an iterative solve phase using multigrid cycles. General graphs pose algorithmic challenges not encountered in traditional multigrid applications. {LAMG} combines a lean piecewise-constant interpolation, judicious node aggregation based on a new node proximity measure (the affinity), and an energy correction of coarse-level systems. This results in fast convergence and substantial setup and memory savings. A serial {LAMG} implementation scaled linearly for a diverse set of 3774 real-world graphs with up to 47 million edges, with no parameter tuning. {LAMG} was more robust than the {UMFPACK} direct solver and combinatorial multigrid ({CMG}), although {CMG} was faster than {LAMG} on average. Our methodology is extensible to eigenproblems and other graph computations.},
+  date      = {2015-12-30},
+  doi       = {10.1137/1.9781611974317.15},
+  file      = {:Boman2015 - An Empirical Comparison of Graph Laplacian Solvers.pdf:PDF},
+  groups    = {kernels-graphs},
+  langid    = {english},
+  priority  = {prio3},
+  urldate   = {2023-02-01},
+}
+
+@InProceedings{Bi2015,
+  author     = {Bi, Yanhong and Fan, Bin and Wu, Fuchao},
+  title      = {Beyond Mahalanobis Metric: Cayley-Klein Metric Learning},
+  pages      = {2339--2347},
+  date       = {2015},
+  eventtitle = {Proceedings of the {IEEE} Conference on Computer Vision and Pattern Recognition},
+  file       = {:pdfs/Bi2015 - Beyond Mahalanobis Metric_ Cayley Klein Metric Learning.pdf:PDF},
+  groups     = {kernels-graphs},
+  priority   = {prio3},
+  shorttitle = {Beyond Mahalanobis Metric},
+  url        = {https://openaccess.thecvf.com/content_cvpr_2015/html/Bi_Beyond_Mahalanobis_Metric_2015_CVPR_paper.html},
+  urldate    = {2023-02-03},
+}
+
+@Article{BarberisCanonico2018,
+  author       = {Barberis Canonico, Lorenzo and {McNeese}, Nathan J. and Duncan, Chris},
+  title        = {Machine Learning as Grounded Theory: Human-Centered Interfaces for Social Network Research through Artificial Intelligence},
+  issn         = {2169-5067},
+  number       = {1},
+  pages        = {1252--1256},
+  volume       = {62},
+  abstract     = {Internet technologies have created unprecedented opportunities for people to come together and through their collective effort generate large amounts of data about human behavior. With the increased popularity of grounded theory, many researchers have sought to use ever-increasingly large datasets to analyze and draw patterns about social dynamics. However, the data is simply too big to enable a single human to derive effective models for many complex social phenomena. Computational methods offer a unique opportunity to analyze a wide spectrum of sociological events by leveraging the power of artificial intelligence. Within the human factors community, machine learning has emerged as the dominant {AI}-approach to deal with big data. However, along with its many benefits, machine learning has introduced a unique challenge: interpretability. The models of macro-social behavior generated by {AI} are so complex that rarely can they translated into human understanding. We propose a new method to conduct grounded theory research by leveraging the power of machine learning to analyze complex social phenomena through social network analysis while retaining interpretability as a core feature.},
+  date         = {2018-09-01},
+  doi          = {10.1177/1541931218621287},
+  file         = {:pdfs/BarberisCanonico2018 - Machine Learning As Grounded Theory_ Human Centered Interfaces for Social Network Research through Artificial Intelligence.pdf:PDF},
+  groups       = {Research Topics},
+  journaltitle = {Proceedings of the Human Factors and Ergonomics Society Annual Meeting},
+  keywords     = {grounded-theory, hcai, social-network},
+  langid       = {english},
+  publisher    = {{SAGE} Publications Inc},
+  shortjournal = {Proceedings of the Human Factors and Ergonomics Society Annual Meeting},
+  shorttitle   = {Machine Learning as Grounded Theory},
+  urldate      = {2022-02-28},
+}
+
+@Report{Sun2021,
+  abstract    = {Specialized domain knowledge is often necessary to accurately annotate training sets for in-depth analysis, but can be burdensome and time-consuming to acquire from domain experts. This issue arises prominently in automated behavior analysis, in which agent movements or actions of interest are detected from video tracking data. To reduce annotation effort, we present {TREBA}: a method to learn annotation-sample efficient trajectory embedding for behavior analysis, based on multi-task self-supervised learning. The tasks in our method can be efficiently engineered by domain experts through a process we call "task programming", which uses programs to explicitly encode structured knowledge from domain experts. Total domain expert effort can be reduced by exchanging data annotation time for the construction of a small number of programmed tasks. We evaluate this trade-off using data from behavioral neuroscience, in which specialized domain knowledge is used to identify behaviors. We present experimental results in three datasets across two domains: mice and fruit flies. Using embeddings from {TREBA}, we reduce annotation burden by up to a factor of 10 without compromising accuracy compared to state-of-the-art features. Our results thus suggest that task programming and self-supervision can be an effective way to reduce annotation effort for domain experts.},
+  author      = {Sun, Jennifer J. and Kennedy, Ann and Zhan, Eric and Anderson, David J. and Yue, Yisong and Perona, Pietro},
+  date        = {2021-03-29},
+  doi         = {10.48550/arXiv.2011.13917},
+  eprint      = {2011.13917},
+  eprinttype  = {arxiv},
+  file        = {:pdfs/Sun2021 - Task Programming_ Learning Data Efficient Behavior Representations.pdf:PDF},
+  groups      = {Research Topics},
+  institution = {{arXiv}},
+  keywords    = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Machine Learning},
+  note        = {type: article},
+  number      = {{arXiv}:2011.13917},
+  shorttitle  = {Task Programming},
+  title       = {Task Programming: Learning Data Efficient Behavior Representations},
+}
+
+@Article{Haarman2021,
+  author       = {Haarman, Tim and Zijlema, Bastiaan and Wiering, Marco},
+  title        = {Unsupervised Keyphrase Extraction for Web Pages},
+  number       = {3},
+  pages        = {58},
+  volume       = {3},
+  date         = {2021},
+  doi          = {10.3390/mti3030058},
+  file         = {:pdfs/Haarman2021 - Unsupervised Keyphrase Extraction for Web Pages.pdf:PDF},
+  groups       = {Research Topics, hyperbolic trees},
+  journaltitle = {Multimodal Technologies and Interaction},
+  publisher    = {MDPI AG},
+}
+
+@Report{Makino2021,
+  abstract    = {In this paper, we propose a novel edge-editing approach to extract relation information from a document. We treat the relations in a document as a relation graph among entities in this approach. The relation graph is iteratively constructed by editing edges of an initial graph, which might be a graph extracted by another system or an empty graph. The way to edit edges is to classify them in a close-first manner using the document and temporally-constructed graph information; each edge is represented with a document context information by a pretrained transformer model and a graph context information by a graph convolutional neural network model. We evaluate our approach on the task to extract material synthesis procedures from materials science texts. The experimental results show the effectiveness of our approach in editing the graphs initialized by our in-house rule-based system and empty graphs.},
+  author      = {Makino, Kohei and Miwa, Makoto and Sasaki, Yutaka},
+  date        = {2021-06-17},
+  doi         = {10.48550/arXiv.2106.09900},
+  eprint      = {2106.09900},
+  eprinttype  = {arxiv},
+  file        = {:pdfs/Makino2021 - A Neural Edge Editing Approach for Document Level Relation Graph Extraction.pdf:PDF},
+  groups      = {Research Topics},
+  institution = {{arXiv}},
+  keywords    = {Computer Science - Computation and Language},
+  note        = {type: article},
+  number      = {{arXiv}:2106.09900},
+  title       = {A Neural Edge-Editing Approach for Document-Level Relation Graph Extraction},
+}
+
+@Article{Matsumoto2021,
+  author       = {Matsumoto, Hirotaka and Mimori, Takahiro and Fukunaga, Tsukasa},
+  title        = {Novel metric for hyperbolic phylogenetic tree embeddings},
+  issn         = {2396-8923},
+  number       = {1},
+  pages        = {bpab006},
+  volume       = {6},
+  abstract     = {Advances in experimental technologies, such as {DNA} sequencing, have opened up new avenues for the applications of phylogenetic methods to various fields beyond their traditional application in evolutionary investigations, extending to the fields of development, differentiation, cancer genomics, and immunogenomics. Thus, the importance of phylogenetic methods is increasingly being recognized, and the development of a novel phylogenetic approach can contribute to several areas of research. Recently, the use of hyperbolic geometry has attracted attention in artificial intelligence research. Hyperbolic space can better represent a hierarchical structure compared to Euclidean space, and can therefore be useful for describing and analyzing a phylogenetic tree. In this study, we developed a novel metric that considers the characteristics of a phylogenetic tree for representation in hyperbolic space. We compared the performance of the proposed hyperbolic embeddings, general hyperbolic embeddings, and Euclidean embeddings, and confirmed that our method could be used to more precisely reconstruct evolutionary distance. We also demonstrate that our approach is useful for predicting the nearest-neighbor node in a partial phylogenetic tree with missing nodes. Furthermore, we proposed a novel approach based on our metric to integrate multiple trees for analyzing tree nodes or imputing missing distances. This study highlights the utility of adopting a geometric approach for further advancing the applications of phylogenetic methods.},
+  date         = {2021-01-01},
+  doi          = {10.1093/biomethods/bpab006},
+  file         = {:pdfs/Matsumoto2021 - Novel Metric for Hyperbolic Phylogenetic Tree Embeddings.pdf:PDF},
+  groups       = {hyperbolic trees},
+  journaltitle = {Biology Methods and Protocols},
+  shortjournal = {Biology Methods and Protocols},
+  urldate      = {2022-07-19},
+}
+
+@Report{Spielman2010,
+  abstract    = {We introduce a new notion of graph sparsificaiton based on spectral similarity of graph Laplacians: spectral sparsification requires that the Laplacian quadratic form of the sparsifier approximate that of the original. This is equivalent to saying that the Laplacian of the sparsifier is a good preconditioner for the Laplacian of the original. We prove that every graph has a spectral sparsifier of nearly linear size. Moreover, we present an algorithm that produces spectral sparsifiers in time \${\textbackslash}{softO}\{m\}\$, where \$m\$ is the number of edges in the original graph. This construction is a key component of a nearly-linear time algorithm for solving linear equations in diagonally-dominant matrcies. Our sparsification algorithm makes use of a nearly-linear time algorithm for graph partitioning that satisfies a strong guarantee: if the partition it outputs is very unbalanced, then the larger part is contained in a subgraph of high conductance.},
+  author      = {Spielman, Daniel A. and Teng, Shang-Hua},
+  date        = {2010-07-20},
+  doi         = {10.48550/arXiv.0808.4134},
+  eprint      = {0808.4134},
+  eprinttype  = {arxiv},
+  file        = {:Spielman2010 - Spectral Sparsification of Graphs.pdf:PDF},
+  groups      = {kernels-graphs},
+  institution = {{arXiv}},
+  keywords    = {Computer Science - Data Structures and Algorithms, Computer Science - Discrete Mathematics},
+  note        = {type: article},
+  number      = {{arXiv}:0808.4134},
+  title       = {Spectral Sparsification of Graphs},
+}
+
+@Article{Vishnoi2013,
+  author       = {Vishnoi, Nisheeth K.},
+  title        = {Lx = b},
+  issn         = {1551-305X, 1551-3068},
+  number       = {1},
+  pages        = {1--141},
+  volume       = {8},
+  abstract     = {Lx = b},
+  date         = {2013-05-22},
+  doi          = {10.1561/0400000054},
+  file         = {:pdfs/Vishnoi2013 - Lx = B.pdf:PDF},
+  groups       = {kernels-graphs},
+  journaltitle = {Foundations and Trends® in Theoretical Computer Science},
+  publisher    = {Now Publishers, Inc.},
+  shortjournal = {{TCS}},
+  url          = {https://www.nowpublishers.com/article/Details/TCS-054},
+  urldate      = {2023-02-01},
+}
+
+@Article{Spielman2014,
+  author       = {Spielman, Daniel A. and Teng, Shang-Hua},
+  title        = {Nearly Linear Time Algorithms for Preconditioning and Solving Symmetric, Diagonally Dominant Linear Systems},
+  issn         = {0895-4798},
+  number       = {3},
+  pages        = {835--885},
+  volume       = {35},
+  abstract     = {We present a randomized algorithm that on input a symmetric, weakly diagonally dominant
+𝑛
+n
+-by-
+𝑛
+n
+ matrix
+𝐴
+A
+ with
+𝑚
+m
+ nonzero entries and an
+𝑛
+n
+-vector
+𝑏
+b
+ produces an
+𝑥
+̃ 
+x{\textasciitilde}
+ such that
+‖
+𝑥
+̃ 
+−
+𝐴
+†
+𝑏
+‖
+𝐴
+≤𝜖‖
+𝐴
+†
+𝑏
+‖
+𝐴
+‖x{\textasciitilde}−A†b‖A≤ϵ‖A†b‖A
+ in expected time
+𝑂(𝑚
+log
+𝑐
+𝑛log(1/𝜖))
+O(mlogc⁡nlog⁡(1/ϵ))
+ for some constant
+𝑐
+c
+. By applying this algorithm inside the inverse power method, we compute approximate Fiedler vectors in a similar amount of time. The algorithm applies subgraph preconditioners in a recursive fashion. These preconditioners improve upon the subgraph preconditioners first introduced by Vaidya in 1990. For any symmetric, weakly diagonally dominant matrix
+𝐴
+A
+ with nonpositive off-diagonal entries and
+𝑘≥1
+k≥1
+, we construct in time
+𝑂(𝑚
+log
+𝑐
+𝑛)
+O(mlogc⁡n)
+ a preconditioner
+𝐵
+B
+ of
+𝐴
+A
+ with at most
+2(𝑛−1)+𝑂((𝑚/𝑘)
+log
+39
+𝑛)
+2(n−1)+O((m/k)log39⁡n)
+ nonzero off-diagonal entries such that the finite generalized condition number
+𝜅
+𝑓
+(𝐴,𝐵)
+κf(A,B)
+ is at most
+𝑘
+k
+, for some other constant
+𝑐
+c
+. In the special case when the nonzero structure of the matrix is planar the corresponding linear system solver runs in expected time
+𝑂(𝑛
+log
+2
+𝑛+𝑛log𝑛 loglog𝑛 log(1/𝜖))
+O(nlog2⁡n+nlog⁡n log⁡log⁡n log⁡(1/ϵ))
+. We hope that our introduction of algorithms of low asymptotic complexity will lead to the development of algorithms that are also fast in practice.},
+  date         = {2014-01},
+  doi          = {10.1137/090771430},
+  file         = {:Spielman2014 - Nearly Linear Time Algorithms for Preconditioning and Solving Symmetric, Diagonally Dominant Linear Systems.pdf:PDF},
+  groups       = {kernels-graphs},
+  journaltitle = {{SIAM} Journal on Matrix Analysis and Applications},
+  keywords     = {support theory, preconditioning, linear equation solvers, symmetric, diagonally dominant matrices, Laplacians, 65F08, 68Q25},
+  publisher    = {Society for Industrial and Applied Mathematics},
+  shortjournal = {{SIAM} J. Matrix Anal. Appl.},
+  urldate      = {2023-02-01},
+}
+
+@InProceedings{Rozemberczki2018,
+  author    = {Rozemberczki, Benedek and Sarkar, Rik},
+  booktitle = {Complex Networks {IX}},
+  date      = {2018},
+  title     = {Fast Sequence-Based Embedding with Diffusion Graphs},
+  doi       = {10.1007/978-3-319-73198-8_9},
+  editor    = {Cornelius, Sean and Coronges, Kate and Gonçalves, Bruno and Sinatra, Roberta and Vespignani, Alessandro},
+  isbn      = {9783319731988},
+  location  = {Cham},
+  pages     = {99--107},
+  publisher = {Springer International Publishing},
+  series    = {Springer Proceedings in Complexity},
+  abstract  = {A {graphRozemberczki}, {BenedekembeddingSarkar}, Rikis a representation of graph vertices in a low- dimensional space, which approximately preserves properties such as distances between nodes. Vertex sequence-based embedding procedures use features extracted from linear sequences of nodes to create embeddings using a neural network. In this paper, we propose diffusion graphs as a method to rapidly generate vertex sequences for network embedding. Its computational efficiency is superior to previous methods due to simpler sequence generation, and it produces more accurate results. In experiments, we found that the performance relative to other methods improves with increasing edge density in the graph. In a community detection task, clustering nodes in the embedding space produces better results compared to other sequence-based embedding methods.},
+  file      = {Full Text PDF:https\://link.springer.com/content/pdf/10.1007%2F978-3-319-73198-8_9.pdf:application/pdf},
+  groups    = {hyperbolic trees},
+  keywords  = {Graph Diffusion, Vertex Sequence, Community Detection, Simpler Sequence Generation, Eulerian Walk},
+  langid    = {english},
+}
+
+@Article{Shu2015,
+  author       = {Shu, Xin and Xu, Huanliang and Tao, Liang},
+  title        = {A least squares formulation of multi-label linear discriminant analysis},
+  issn         = {0925-2312},
+  pages        = {221--230},
+  volume       = {156},
+  abstract     = {The classical linear discriminant analysis has been recently extended to the multi-label dimensionality reduction. However, Multi-label Linear Discriminant Analysis ({MLDA}) involves dense matrices eigen-decomposition that is known to be computationally expensive for the large-scale problems. In this paper, we present that the formulation of {MLDA} can be equivalently casted as a new least-squares framework so as to significantly mitigate the computational overhead and scale to the data collections with higher dimension. Further, it is also found that appealing regularization techniques can be incorporated into the least-squares model to boost generalization accuracy. Experimental results on several popular multi-label benchmarks not only verify the established equivalence relationship, but also corroborate the effectiveness and efficiency of our proposed algorithms.},
+  date         = {2015-05-25},
+  doi          = {10.1016/j.neucom.2014.12.057},
+  file         = {:pdfs/Shu2015 - A Least Squares Formulation of Multi Label Linear Discriminant Analysis.html:URL},
+  groups       = {kernels-graphs},
+  journaltitle = {Neurocomputing},
+  keywords     = {Multi-label linear discriminant analysis, Least squares, Dimension reduction, Spectral regression},
+  langid       = {english},
+  shortjournal = {Neurocomputing},
+  url          = {https://www.sciencedirect.com/science/article/pii/S0925231214017214},
+  urldate      = {2023-02-01},
+}
+
+@Article{Reff2012,
+  author       = {Reff, Nathan and Rusnak, Lucas J.},
+  title        = {An oriented hypergraphic approach to algebraic graph theory},
+  issn         = {0024-3795},
+  number       = {9},
+  pages        = {2262--2270},
+  volume       = {437},
+  abstract     = {An oriented hypergraph is a hypergraph where each vertex-edge incidence is given a label of +1 or -1. We define the adjacency, incidence and Laplacian matrices of an oriented hypergraph and study each of them. We extend several matrix results known for graphs and signed graphs to oriented hypergraphs. New matrix results that are not direct generalizations are also presented. Finally, we study a new family of matrices that contains walk information.},
+  date         = {2012-11-01},
+  doi          = {10.1016/j.laa.2012.06.011},
+  file         = {:pdfs/Reff2012 - An Oriented Hypergraphic Approach to Algebraic Graph Theory.html:URL},
+  groups       = {incidence structures},
+  journaltitle = {Linear Algebra and its Applications},
+  keywords     = {Oriented hypergraph, Hypergraph Laplacian matrix, Hypergraph adjacency matrix, Incidence matrix, Signed graph},
+  langid       = {english},
+  shortjournal = {Linear Algebra and its Applications},
+  url          = {https://www.sciencedirect.com/science/article/pii/S0024379512004466},
+  urldate      = {2023-02-01},
+}
+
+@InProceedings{Marconi2020,
+  author     = {Marconi, Gian and Ciliberto, Carlo and Rosasco, Lorenzo},
+  title      = {Hyperbolic Manifold Regression},
+  pages      = {2570--2580},
+  publisher  = {{PMLR}},
+  abstract   = {Geometric representation learning has shown great promise for important tasks inartificial intelligence and machine learning. However, an open problem is yethow to integrate non-Euclidean representations with standard machine learningmethods.In this work, we consider the task of regression onto hyperbolic space for whichwe propose two approaches: a non-parametric kernel-method for which we also proveexcess risk bounds and a parametric deep learning model that is informed bythe geodesics of the target space.By recasting predictions on trees as manifold regression problems we demonstrate the applications of our approach on two challenging tasks: 1)hierarchical classification via label embeddings and 2) inventing new conceptsby predicting their embedding in a continuous representation of a base taxonomy.In our experiments, we find that the proposed estimators outperform their naivecounterparts that perform regression in the ambient Euclidean space.},
+  date       = {2020-06-03},
+  eventtitle = {International Conference on Artificial Intelligence and Statistics},
+  file       = {:pdfs/Marconi2020 - Hyperbolic Manifold Regression.pdf:PDF},
+  groups     = {hyperbolic trees},
+  issn       = {2640-3498},
+  langid     = {english},
+  url        = {https://proceedings.mlr.press/v108/marconi20a.html},
+  urldate    = {2023-02-01},
+}
+
+@InProceedings{Rudi2018,
+  author    = {Rudi, Alessandro and Ciliberto, Carlo and Marconi, {GianMaria} and Rosasco, Lorenzo},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Manifold Structured Prediction},
+  publisher = {Curran Associates, Inc.},
+  volume    = {31},
+  abstract  = {Structured prediction provides a general framework to deal with supervised problems where the outputs have semantically rich structure. While classical approaches consider finite, albeit potentially huge, output spaces, in this paper we discuss how structured prediction can be extended to a continuous scenario. Specifically, we study a structured prediction approach to manifold-valued regression. We characterize a class of problems for which the considered approach is statistically consistent and study how geometric optimization can be used to compute the corresponding estimator. Promising experimental results on both simulated and real data complete our study.},
+  date      = {2018},
+  file      = {:pdfs/Rudi2018 - Manifold Structured Prediction.pdf:PDF},
+  groups    = {hyperbolic trees},
+  url       = {https://proceedings.neurips.cc/paper/2018/hash/f6185f0ef02dcaec414a3171cd01c697-Abstract.html},
+  urldate   = {2023-02-01},
+}
+
+@Report{Duan2021,
+  abstract    = {Multivariate hypergeometric distribution arises frequently in elementary statistics and probability courses, for simultaneously studying the occurence law of specified events, when sampling without replacement from a finite population with fixed number of classification. Covariance matrix of this distribution is well known to be identical to its multinomial counterpart multiplied by 1-(n-1)/(N-1), with N and n being population and sample sizes, respectively. It appears to however, have been less discussed in the literature about the meaning of this relationship, especially regarding the specific form of the multiplier. Based on an augmenting argument together with probabilistic symmetry, we present a more transparent understanding for the covariance structure of the multivariate hypergeometric distribution. We discuss implications of these combined techniques and provide a unified description about the relative efficiency for estimating population mean based on simple random sampling, probability proportional-to-size sampling and adaptive cluster sampling, with versus without replacement. We also provide insight into the classic random group method for variance estimation.},
+  author      = {Duan, X. G.},
+  date        = {2021-01-02},
+  doi         = {10.48550/arXiv.2101.00548},
+  eprint      = {2101.00548},
+  eprinttype  = {arxiv},
+  file        = {:pdfs/Duan2021 - Better Understanding of the Multivariate Hypergeometric Distribution with Implications in Design Based Survey Sampling.pdf:PDF},
+  groups      = {incidence structures},
+  institution = {{arXiv}},
+  keywords    = {Mathematics - Statistics Theory, Statistics - Other Statistics},
+  note        = {type: article},
+  number      = {{arXiv}:2101.00548},
+  title       = {Better understanding of the multivariate hypergeometric distribution with implications in design-based survey sampling},
+}
+
+@Article{Childs2000,
+  author       = {Childs, Aaron and Balakrishnan, N.},
+  title        = {Some approximations to the multivariate hypergeometric distribution with applications to hypothesis testing},
+  issn         = {0167-9473},
+  number       = {2},
+  pages        = {137--154},
+  volume       = {35},
+  abstract     = {In this paper, we will examine some approximations to the multivariate hypergeometric distribution by continuous random variables. The continuous random variables will be chosen so as to have the same range of variation, means, variances and covariances as their discrete counterparts. We then show how these approximations can be used in testing hypotheses about the parameters of the multivariate hypergeometric distribution.},
+  date         = {2000-12-28},
+  doi          = {10.1016/S0167-9473(00)00007-4},
+  file         = {:pdfs/Childs2000 - Some Approximations to the Multivariate Hypergeometric Distribution with Applications to Hypothesis Testing.html:URL},
+  groups       = {incidence structures},
+  journaltitle = {Computational Statistics \& Data Analysis},
+  keywords     = {Order statistics, Multivariate hypergeometric distribution, Dirichlet distribution},
+  langid       = {english},
+  shortjournal = {Computational Statistics \& Data Analysis},
+  url          = {https://www.sciencedirect.com/science/article/pii/S0167947300000074},
+  urldate      = {2023-02-01},
+}
+
+@Report{Sutter2022,
+  abstract     = {Partitioning a set of elements into subsets of a priori unknown sizes is essential in many applications. These subset sizes are rarely explicitly learned - be it the cluster sizes in clustering applications or the number of shared versus independent generative latent factors in weakly-supervised learning. Probability distributions over correct combinations of subset sizes are non-differentiable due to hard constraints, which prohibit gradient-based optimization. In this work, we propose the differentiable hypergeometric distribution. The hypergeometric distribution models the probability of different group sizes based on their relative importance. We introduce reparameterizable gradients to learn the importance between groups and highlight the advantage of explicitly learning the size of subsets in two typical applications: weakly-supervised learning and clustering. In both applications, we outperform previous approaches, which rely on suboptimal heuristics to model the unknown size of groups.},
+  author       = {Sutter, Thomas M. and Manduchi, Laura and Ryser, Alain and Vogt, Julia E.},
+  date         = {2022-03-03},
+  doi          = {10.3929/ethz-b-000588775},
+  file         = {:pdfs/Sutter2022 - Learning Group Importance Using the Differentiable Hypergeometric Distribution.pdf:PDF},
+  groups       = {incidence structures},
+  howpublished = {Working Paper},
+  institution  = {{ETH} Zurich, Departement of Computer Science},
+  langid       = {english},
+  rights       = {http://rightsstatements.org/page/{InC}-{NC}/1.0/},
+  title        = {Learning Group Importance using the Differentiable Hypergeometric Distribution},
+  type         = {Working Paper},
+  url          = {https://www.research-collection.ethz.ch/handle/20.500.11850/588775},
+  urldate      = {2023-02-01},
+}
+
+@InProceedings{Aynulin2021,
+  author    = {Aynulin, Rinat and Chebotarev, Pavel},
+  booktitle = {Complex Networks \& Their Applications {IX}},
+  title     = {Measuring Proximity in Attributed Networks for Community Detection},
+  editor    = {Benito, Rosa M. and Cherifi, Chantal and Cherifi, Hocine and Moro, Esteban and Rocha, Luis Mateus and Sales-Pardo, Marta},
+  pages     = {27--37},
+  publisher = {Springer International Publishing},
+  series    = {Studies in Computational Intelligence},
+  abstract  = {Proximity measures on graphs have a variety of applications in network analysis, including community detection. Previously they have been mainly studied in the context of networks without attributes. If node attributes are taken into account, however, this can provide more insight into the network structure. In this paper, we extend the definition of some well-studied proximity measures to attributed networks. To account for attributes, several attribute similarity measures are used. Finally, the obtained proximity measures are applied to detect the community structure in some real-world networks using the spectral clustering algorithm.},
+  date      = {2021},
+  doi       = {10.1007/978-3-030-65347-7_3},
+  file      = {:pdfs/Aynulin2021 - Measuring Proximity in Attributed Networks for Community Detection.html:URL},
+  groups    = {kernels-graphs},
+  isbn      = {9783030653477},
+  keywords  = {Attributed networks, Community detection, Proximity measure, Kernel on graph},
+  langid    = {english},
+  location  = {Cham},
+}
+
+@Report{Luxburg2011,
+  abstract    = {Next to the shortest path distance, the second most popular distance function between vertices in a graph is the commute distance (resistance distance). For two vertices u and v, the hitting time H\_\{uv\} is the expected time it takes a random walk to travel from u to v. The commute time is its symmetrized version C\_\{uv\} = H\_\{uv\} + H\_\{vu\}. In our paper we study the behavior of hitting times and commute distances when the number n of vertices in the graph is very large. We prove that as n converges to infinty, hitting times and commute distances converge to expressions that do not take into account the global structure of the graph at all. Namely, the hitting time H\_\{uv\} converges to 1/d\_v and the commute time to 1/d\_u + 1/d\_v where d\_u and d\_v denote the degrees of vertices u and v. In these cases, the hitting and commute times are misleading in the sense that they do not provide information about the structure of the graph. We focus on two major classes of random graphs: random geometric graphs (k-nearest neighbor graphs, epsilon-graphs, Gaussian similarity graphs) and random graphs with given expected degrees (in particular, Erdos-Renyi graphs with and without planted partitions)},
+  author      = {von Luxburg, Ulrike and Radl, Agnes and Hein, Matthias},
+  date        = {2011-05-26},
+  doi         = {10.48550/arXiv.1003.1266},
+  eprint      = {1003.1266},
+  eprinttype  = {arxiv},
+  file        = {:pdfs/Luxburg2011 - Hitting and Commute Times in Large Graphs Are Often Misleading.pdf:PDF},
+  groups      = {kernels-graphs},
+  institution = {{arXiv}},
+  keywords    = {Computer Science - Data Structures and Algorithms, Computer Science - Machine Learning, Mathematics - Probability},
+  note        = {type: article},
+  number      = {{arXiv}:1003.1266},
+  title       = {Hitting and commute times in large graphs are often misleading},
+}
+
+@Article{Bozzo2013,
+  author     = {Enrico Bozzo},
+  title      = {The Moore–Penrose inverse of the normalized graph Laplacian},
+  issn       = {0024-3795},
+  pages      = {3038--3043},
+  volume     = {439},
+  accessdate = {2023-02-01},
+  date       = {2013},
+  doi        = {10.1016/j.laa.2013.08.039},
+  groups     = {kernels-graphs},
+  url        = {https://www.sciencedirect.com/science/article/pii/S0024379513005582},
+}
+
+@Article{Lahav2019,
+  author     = {Almog Lahav and Ronen Talmon and Yuval Kluger},
+  title      = {Mahalanobis distance informed by clustering},
+  issn       = {2049-8772},
+  pages      = {377--406},
+  volume     = {8},
+  accessdate = {2023-02-01},
+  date       = {2019},
+  doi        = {10.1093/imaiai/iay011},
+  eprint     = {1708.03914},
+  eprinttype = {arxiv},
+  file       = {:pdfs/- Mahalanobis Distance Informed by Clustering.pdf:PDF},
+  groups     = {hyperbolic trees},
+}
+
+@Report{CrystalOrnelas2023,
+  author      = {Crystal-Ornelas, Robert and Edwards, Brandon P. M. and Hébert, Katherine and Hudgins, Emma J. and Reyes, Luna L. Sánchez and Scott, Eric R. and Grainger, Matthew J. and Foroughirad, Vivienne and Binley, Allison D. and Brookson, Cole B. and Gaynor, Kaitlyn M. and Sabet, Saeed Shafiei and Güncan, Ali and Hillemann, Friederike and Weierbach, Helen and Gomes, Dylan G. E. and Braga, Pedro Henrique Pereira},
+  date        = {2023-01-30},
+  file        = {:pdfs/CrystalOrnelas2023 - Not Just for Programmers_ How GitHub Can Accelerate Collaborative and Reproducible Research in Ecology and Evolution.pdf:PDF},
+  groups      = {Human Factors},
+  institution = {Manubot},
+  langid      = {american},
+  shorttitle  = {Not just for programmers},
+  title       = {Not just for programmers: How {GitHub} can accelerate collaborative and reproducible research in ecology and evolution},
+  url         = {https://SORTEE-Github-Hackathon.github.io/manuscript/},
+  urldate     = {2023-02-01},
+}
+
+@Article{Chung2000,
+  author       = {Chung, Fan and Yau, S. -T.},
+  title        = {Discrete Green's Functions},
+  issn         = {0097-3165},
+  number       = {1},
+  pages        = {191--214},
+  volume       = {91},
+  abstract     = {We study discrete Green's functions and their relationship with discrete Laplace equations. Several methods for deriving Green's functions are discussed. Green's functions can be used to deal with diffusion-type problems on graphs, such as chip-firing, load balancing, and discrete Markov chains.},
+  date         = {2000-07-01},
+  doi          = {10.1006/jcta.2000.3094},
+  file         = {:pdfs/Chung2000 - Discrete Green's Functions.html:URL},
+  groups       = {kernels-graphs},
+  journaltitle = {Journal of Combinatorial Theory, Series A},
+  langid       = {english},
+  shortjournal = {Journal of Combinatorial Theory, Series A},
+  url          = {https://www.sciencedirect.com/science/article/pii/S0097316500930942},
+  urldate      = {2023-02-01},
+}
+
+@Report{Chamberlain2017,
+  abstract    = {Neural embeddings have been used with great success in Natural Language Processing ({NLP}). They provide compact representations that encapsulate word similarity and attain state-of-the-art performance in a range of linguistic tasks. The success of neural embeddings has prompted significant amounts of research into applications in domains other than language. One such domain is graph-structured data, where embeddings of vertices can be learned that encapsulate vertex similarity and improve performance on tasks including edge prediction and vertex labelling. For both {NLP} and graph based tasks, embeddings have been learned in high-dimensional Euclidean spaces. However, recent work has shown that the appropriate isometric space for embedding complex networks is not the flat Euclidean space, but negatively curved, hyperbolic space. We present a new concept that exploits these recent insights and propose learning neural embeddings of graphs in hyperbolic space. We provide experimental evidence that embedding graphs in their natural geometry significantly improves performance on downstream tasks for several real-world public datasets.},
+  author      = {Chamberlain, Benjamin Paul and Clough, James and Deisenroth, Marc Peter},
+  date        = {2017-05-29},
+  doi         = {10.48550/arXiv.1705.10359},
+  eprint      = {1705.10359},
+  eprinttype  = {arxiv},
+  file        = {:pdfs/Chamberlain2017 - Neural Embeddings of Graphs in Hyperbolic Space.pdf:PDF},
+  groups      = {hyperbolic trees},
+  institution = {{arXiv}},
+  keywords    = {Statistics - Machine Learning, Computer Science - Machine Learning},
+  note        = {type: article},
+  number      = {{arXiv}:1705.10359},
+  title       = {Neural Embeddings of Graphs in Hyperbolic Space},
+}
+
+@InProceedings{Esuli2009,
+  author    = {Esuli, Andrea and Sebastiani, Fabrizio},
+  booktitle = {Advances in Information Retrieval},
+  title     = {Active Learning Strategies for Multi-Label Text Classification},
+  editor    = {Boughanem, Mohand and Berrut, Catherine and Mothe, Josiane and Soule-Dupuy, Chantal},
+  pages     = {102--113},
+  publisher = {Springer},
+  series    = {Lecture Notes in Computer Science},
+  abstract  = {Active learning refers to the task of devising a ranking function that, given a classifier trained from relatively few training examples, ranks a set of additional unlabeled examples in terms of how much further information they would carry, once manually labeled, for retraining a (hopefully) better classifier. Research on active learning in text classification has so far concentrated on single-label classification; active learning for multi-label classification, instead, has either been tackled in a simulated (and, we contend, non-realistic) way, or neglected tout court. In this paper we aim to fill this gap by examining a number of realistic strategies for tackling active learning for multi-label classification. Each such strategy consists of a rule for combining the outputs returned by the individual binary classifiers as a result of classifying a given unlabeled document. We present the results of extensive experiments in which we test these strategies on two standard text classification datasets.},
+  date      = {2009},
+  doi       = {10.1007/978-3-642-00958-7_12},
+  file      = {:pdfs/Esuli2009 - Active Learning Strategies for Multi Label Text Classification.html:URL},
+  groups    = {Research Topics},
+  isbn      = {9783642009587},
+  langid    = {english},
+  location  = {Berlin, Heidelberg},
 }
